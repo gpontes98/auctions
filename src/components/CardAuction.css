@@ -1,0 +1,35 @@
+.cardAuction {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cardAuction div{
+    padding: 10px 0;   
+}
+
+.dataAuction, .dataCar {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.dataAuction div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.dataAuction div:first-child{
+    border-right: 2px solid #a5a5a5;
+}
+
+.dataCar{
+    text-align: center;
+    padding:0 25px
+}

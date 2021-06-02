@@ -1,0 +1,20 @@
+.imageCar{
+    width: 380px;
+    height: 285px;
+    position: relative;
+}
+
+.imageCar img{
+    width: 380px;
+    position: absolute;
+}
+
+.showDetails{
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    height: 30px;
+    margin-top: 235px;
+}

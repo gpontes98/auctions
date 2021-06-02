@@ -1,0 +1,9 @@
+.buttonOffer{
+    background-color: #3eb871;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+}

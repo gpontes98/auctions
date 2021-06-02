@@ -1,0 +1,50 @@
+.header{
+    display: flex;
+    width: 100vw;
+    max-height: 100px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoPhone{
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    width: 175px;
+    margin-left: 50px;
+    padding-left: 25px;
+    justify-content: space-around;
+    border-left: 2px solid #a5a5a5;
+    color: #a5a5a5;
+    font-weight: 600;
+}
+
+.userTest{
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #a5a5a5;
+    border-right: 2px solid #a5a5a5;
+    font-weight: 600;
+}
+
+.userTest img{
+    width: 30px;
+}
+

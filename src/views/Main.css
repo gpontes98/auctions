@@ -1,0 +1,8 @@
+.main{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 250px;
+    box-sizing: border-box;
+}

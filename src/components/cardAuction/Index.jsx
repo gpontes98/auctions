@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-import './CardAuction.css'
-import ImageCar from './ImageCar'
+import './Index.css'
+import ImageCar from './imageCar/ImageCar'
 import Remainingtime from './RemainingTime'
 import LastBid from './LastBid'
 import Button from './Button'

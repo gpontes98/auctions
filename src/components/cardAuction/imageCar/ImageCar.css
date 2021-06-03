@@ -10,15 +10,7 @@
     border-radius: 5px 5px 0 0;
 }
 
-.showDetails{
-    text-align: center;
-    background-color: rgba(0,0,0,0.4);
-    width: 100%;
-    position: absolute;
-    color: #fff;
-    height: 30px;
-    margin-top: 255px;
-}
+
 
 @media screen and (max-width:760px){
     .imageCar {

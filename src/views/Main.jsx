@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import CardAuction from '../components/CardAuction'
+import CardAuction from '../components/cardAuction/'
 
 import api from '../services/api'
 

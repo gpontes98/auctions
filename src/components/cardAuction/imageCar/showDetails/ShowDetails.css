@@ -1,0 +1,26 @@
+.showDetails{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top: 255px;
+    transition: all 0.2s;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.showDetails:hover{
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+@media screen and (max-width:760px){
+    .showDetails {
+        margin-top: 225px;
+    }
+}

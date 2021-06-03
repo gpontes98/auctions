@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import Menu from './Menu'
 
@@ -9,7 +9,8 @@ import user from '../../assets/user.svg'
 import caret from '../../assets/caret.svg'
 
 export default function Header(props) {
-    const [userName, setUser] = useState(props.user || 'Gabriel Pontes')
+    //const [userName, setUser] = useState(props.user || 'Gabriel Pontes')
+    const userName = 'Gabriel Pontes'
 
     return (
         <div className="header">
@@ -34,7 +35,7 @@ export default function Header(props) {
 
                 <img className="userCaret" src={caret} alt="caret" />
 
-                <Menu/>
+                <Menu />
 
             </div>
         </div>

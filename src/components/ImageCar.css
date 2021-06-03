@@ -7,6 +7,7 @@
 .imageCar img{
     width: 380px;
     position: absolute;
+    border-radius: 5px 5px 0 0;
 }
 
 .showDetails{
@@ -16,5 +17,5 @@
     position: absolute;
     color: #fff;
     height: 30px;
-    margin-top: 235px;
+    margin-top: 255px;
 }

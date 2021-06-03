@@ -1,10 +1,8 @@
 import React from 'react'
 
-import hondaFit2007 from '../images/honda-fit-2007.jpg'
-
 import './ImageCar.css'
 
-export default props =>{
+export default function Main (props){
     return(
         <div className="imageCar">
             <img src={props.imageUrl} alt="" />

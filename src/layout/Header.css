@@ -1,7 +1,7 @@
 .header{
     display: flex;
-    width: 100vw;
-    max-height: 100px;
+    width: 100%;
+    min-height: 100px;
     flex-wrap: wrap;
     background-color: #fff;
     justify-content: space-around;
@@ -48,3 +48,27 @@
     width: 30px;
 }
 
+@media screen and (max-width:720px){
+    .header{
+        min-height: 250px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .phone{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .phone img{
+        margin-right: 5px;
+    }
+}

@@ -5,45 +5,48 @@ import api from '../services/api'
 
 import './Main.css'
 
-export default props => {
+
+function retornaMaior(arr){
+    if(arr.length < 1) return 0;
+    
+    return Math.max.apply(null, arr)
+}
+
+export default function Main(){
     const [dataCars, setDataCars] = useState([])
     
+    const getData = async _ =>{
+        const response = await api()
+        setDataCars(response);
+    }
+
     useEffect(() => {
-        api().then(data => {
-            setDataCars(data);
-        })
+        getData()
     }, [])
 
-    console.log(dataCars)
-
     return(
-        <div className="main">    
-            <CardAuction
-                make={dataCars[0].make}
-                version={dataCars[0].version}
-                year={dataCars[0].year}
-                km={dataCars[0].km}
-                imageUrl={dataCars[0].imageUrl}
-                remainingTime={dataCars[0].remainingTime}
-            />
-
-            <CardAuction
-                make={dataCars[0].make}
-                version={dataCars[0].version}
-                year={dataCars[0].year}
-                km={dataCars[0].km}
-                imageUrl={dataCars[0].imageUrl}
-                remainingTime={dataCars[0].remainingTime}
-            />
-
-            <CardAuction
-                make={dataCars[0].make}
-                version={dataCars[0].version}
-                year={dataCars[0].year}
-                km={dataCars[0].km}
-                imageUrl={dataCars[0].imageUrl}
-                remainingTime={dataCars[0].remainingTime}
-            />
+        <div className="main">
+            {
+                dataCars.map(car => {
+                    return(
+                        <CardAuction key={car.id}
+                            make={car.make}
+                            version={car.version}
+                            year={car.year}
+                            km={car.km}
+                            imageUrl={car.imageUrl}
+                            remainingTime={car.remainingTime}
+                            amount={
+                                retornaMaior(
+                                    car.bids.map(bid =>{
+                                        return bid.amount
+                                    })
+                                )
+                            }
+                        />
+                    )
+                })
+            }
         </div>
     )
 }

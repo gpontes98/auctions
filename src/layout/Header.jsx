@@ -5,13 +5,14 @@ import logo from '../assets/logo.png'
 import phone from '../assets/phone.png'
 import user from '../assets/user.png'
 
-export default _ =>
+export default function Header() {
+    return (
         <div className="header">
             <div className="logoPhone">
                 <div className="logo">
                     <img src={logo} alt="Logo Instacarros" />
-                </div>     
-                
+                </div>
+
                 <div className="phone">
                     <img src={phone} alt="Phone Asset" />
                     (11) 3569-3465
@@ -23,3 +24,5 @@ export default _ =>
                 User Test
             </div>
         </div>
+    )
+}

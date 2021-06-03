@@ -1,35 +1,91 @@
 .cardAuction {
     background-color: #fff;
     border-radius: 5px;
-    width: 400px;
-    padding: 10px;
+    width: 380px;
     box-sizing: border-box;
+    margin-top: 50px;
+    padding-bottom: 10px;
 }
 
-.cardAuction div{
-    padding: 10px 0;   
-}
-
-.dataAuction, .dataCar {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #a5a5a5;
-    border-bottom: 1px solid #a5a5a5;
-}
-
-.dataAuction div{
+.detailsAuction{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    min-height: 150px;
+}
+
+.detailsAuction > div{
+    width: 95%;
+}
+
+.timeOfer{
+    display: flex;
+}
+
+.timeOfer span{
+    font-size: 0.7rem;
+    color: #323232;
+}
+
+.timeOfer div .remainingTime{
+    color: #ff6d4a;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.timeOfer div .lastOffer{
+    color: #3eb871;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.timeOfer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #bdbdbd;
+    width: 50%;
+    height: 75px;
+}
+
+
+.timeOfer div:first-child{
+    border-right: 2px solid #bdbdbd;
+}
+
+.descriptionCar{
+    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    min-height: 75px;
+    border-top: 2px solid #bdbdbd;
+    color: #323232;
+    font-weight: bold;
+}
+
+.yearKm{
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid #bdbdbd;
+    border-bottom: 2px solid #bdbdbd; 
+    margin-bottom: 15px;
+    color: #323232;
+    font-weight:600;
+}
+
+.yearKm div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
     width: 50%;
 }
 
-.dataAuction div:first-child{
-    border-right: 2px solid #a5a5a5;
-}
-
-.dataCar{
-    text-align: center;
-    padding:0 25px
+.yearKm div:first-child{
+    border-right: 2px solid #bdbdbd;
 }

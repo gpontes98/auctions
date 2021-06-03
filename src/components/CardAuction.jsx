@@ -1,28 +1,33 @@
 import React from 'react'
 
-import axios from 'axios'
-
 import './CardAuction.css'
-import ButtonOffer from './ButtonOffer'
 import ImageCar from './ImageCar'
+import Remainingtime from './RemainingTime'
+import Button from './Button'
 
-export default props => {
-    
+export default function CardAuction (props){
     return(
         <div className="cardAuction">
             <ImageCar imageUrl={props.imageUrl} />
-            <div className="dataAuction">
-                <div><span>TEMPO RESTANTE:</span><span>{props.remainingTime}</span></div>
-                <div><span>ULTIMA OFERTA:</span><span>29.250</span></div>
+
+            <div className="detailsAuction">
+
+                <div className="timeOfer">
+                    <div><span>TEMPO RESTANTE</span><span className="remainingTime"><Remainingtime remainingTime={props.remainingTime}/></span></div>
+                    <div><span>ÚLTIMA OFERTA</span><span className="lastOffer">R$ {(props.amount).toLocaleString('pt-br')}</span></div>
+                </div>
+
+                <div className="descriptionCar">
+                    <span>{props.make} {props.version}</span>
+                </div>
+
+                <div className="yearKm">
+                    <div><span>{props.year}</span></div>
+                    <div><span>{(props.km).toLocaleString('pt-br')} km</span></div>
+                </div>      
+
+                <Button title={"FAZER OFERTA"}/>
             </div>
-            <div className="dataCar">
-                <span>{props.make} {props.version}</span>
-            </div>
-            <div className="dataCar">
-                <div><span>{props.year}</span></div>
-                <div><span>{props.km}km</span></div>
-            </div>
-            <ButtonOffer/>
         </div>
     )
 }

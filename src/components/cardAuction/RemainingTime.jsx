@@ -7,9 +7,11 @@ export default function RemainingTime(props) {
     const [remainingTime, setRemainingTime] = useState(remainingTimeConverted)
 
     function changeTime() {
-        setTimeout(() => {
-            setRemainingTime(remainingTime - 1)
-        }, 1000)
+        if (remainingTime > 0) {
+            setTimeout(() => {
+                setRemainingTime(remainingTime - 1)
+            }, 1000)
+        }
     }
 
     changeTime()

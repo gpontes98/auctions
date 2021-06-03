@@ -1,19 +1,20 @@
 import React, { useState } from 'react'
 
+import './RemainingTime.css'
+
 export default function RemainingTime(props) {
     const remainingTimeConverted = Math.round(props.remainingTime / 100)
     const [remainingTime, setRemainingTime] = useState(remainingTimeConverted)
 
-    function alteraEstado() {
+    function changeTime() {
         setTimeout(() => {
             setRemainingTime(remainingTime - 1)
         }, 1000)
     }
 
+    changeTime()
 
-    alteraEstado()
-
-    function segParaHora(time) {
+    function secondsToHour(time) {
 
         let hours = Math.floor(time / 3600)
         let minutes = Math.floor((time % 3600) / 60)
@@ -29,11 +30,12 @@ export default function RemainingTime(props) {
         return hours + ":" + minutes + ":" + seconds
 
     }
-
-
     return (
         <>
-            {segParaHora(remainingTime)}
+            <span className="remainingTime">
+                {secondsToHour(remainingTime)}
+            </span>
+
         </>
     )
 }

@@ -19,3 +19,17 @@
     height: 30px;
     margin-top: 255px;
 }
+
+@media screen and (max-width:760px){
+    .imageCar {
+        width: 340px;
+    }
+    
+    .imageCar img{
+        width: 340px;
+    }
+
+    .showDetails {
+        margin-top: 225px;
+    }
+}

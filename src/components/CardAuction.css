@@ -1,3 +1,8 @@
+:root {
+    --font-color: #727272;
+    --borderLines-color:#d4d4d4;
+}
+
 .cardAuction {
     background-color: #fff;
     border-radius: 5px;
@@ -19,40 +24,28 @@
     width: 95%;
 }
 
-.timeOfer{
+.timeBid{
     display: flex;
 }
 
-.timeOfer span{
+.timeBid span{
     font-size: 0.7rem;
-    color: #323232;
+    color: var(--font-color);
 }
 
-.timeOfer div .remainingTime{
-    color: #ff6d4a;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-.timeOfer div .lastOffer{
-    color: #3eb871;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-.timeOfer div{
+.timeBid div{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-top: 2px solid #bdbdbd;
+    border-top: 1px solid var(--borderLines-color);
     width: 50%;
     height: 75px;
 }
 
 
-.timeOfer div:first-child{
-    border-right: 2px solid #bdbdbd;
+.timeBid div:first-child{
+    border-right: 1px solid var(--borderLines-color);
 }
 
 .descriptionCar{
@@ -61,8 +54,8 @@
     align-items: center;
     text-align: center;
     min-height: 75px;
-    border-top: 2px solid #bdbdbd;
-    color: #323232;
+    border-top: 1px solid var(--borderLines-color);
+    color: #3a3a3a;
     font-weight: bold;
 }
 
@@ -71,10 +64,10 @@
     min-height: 50px;
     align-items: center;
     justify-content: space-around;
-    border-top: 2px solid #bdbdbd;
-    border-bottom: 2px solid #bdbdbd; 
+    border-top: 1px solid var(--borderLines-color);
+    border-bottom: 1px solid var(--borderLines-color); 
     margin-bottom: 15px;
-    color: #323232;
+    color: var(--font-color);
     font-weight:600;
 }
 
@@ -87,5 +80,11 @@
 }
 
 .yearKm div:first-child{
-    border-right: 2px solid #bdbdbd;
+    border-right: 1px solid var(--borderLines-color);
+}
+
+@media screen and (max-width:760px){
+    .cardAuction {
+        width: 340px;
+    }
 }

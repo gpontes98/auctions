@@ -2,8 +2,9 @@ import React from 'react'
 
 import './Header.css'
 import logo from '../assets/logo.png'
-import phone from '../assets/phone.png'
-import user from '../assets/user.png'
+import phone from '../assets/phone.svg'
+import user from '../assets/user.svg'
+import caret from '../assets/caret.svg'
 
 export default function Header() {
     return (
@@ -20,8 +21,15 @@ export default function Header() {
             </div>
 
             <div className="userTest">
-                <img src={user} alt="User Asset" />
-                User Test
+                <div className="userAsset">
+                   <img src={user} className="userAsset" alt="User Asset" />
+                
+                    <span>User Test</span> 
+                </div>
+                
+                <div className="userCaret">
+                    <img src={caret} alt="caret" />
+                </div>
             </div>
         </div>
     )

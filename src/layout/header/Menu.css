@@ -1,0 +1,33 @@
+.menu{
+    position: absolute;
+    margin-top: 240px;
+    width: 204px;
+    z-index: 1;
+    display: none;
+    padding: 25px 0;
+    background-color: #a5a5a5;
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.menu li{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 5px 0;
+    transition: all 0.2s;
+}
+
+.menu li:hover{
+    background-color: #fff;
+    color: #a5a5a5;
+}
+
+@media screen and (max-width: 550px){
+    .menu{
+        margin-top: 219px;
+    }
+}
